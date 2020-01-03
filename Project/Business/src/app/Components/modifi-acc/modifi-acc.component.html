@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="dashboard"></div>
+    <div class="between">
+        <div class="AccountDetail">
+            <h1>Account Register</h1>
+            <div style="display: flex;">
+                <div class="text">UserName:</div>
+                <div class="text"> {{username}}</div>
+                <button class="update" (click)="change()">change </button>
+                <input class="inputchange" (keyup)="getvalueusername($event)"/>
+            </div>
+            <div style="display: flex;">
+                <div class="text">Email:</div>
+                <div class="text">{{email}}</div>
+                <button class="update" (click)="change()">change </button>
+                <input class="inputchange" (keyup)="getvalueemail($event)"/>
+            </div>
+            <div style="display: flex;">
+                <div class="text">Password: </div>
+                <div class="text"> {{password}}</div>
+                <button class="update" (click)="change()">change </button>
+                <input  class="inputchange" (keyup)="getValuePassWord($event)"/>
+            </div>
+            <button (click)="modifi()">Update</button>
+        </div>
+        <div class="ProfileDetail">
+            
+        </div>
+    </div>
+    <div class="dashboard"></div>
+</div>

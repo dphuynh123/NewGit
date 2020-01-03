@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    height: 700px;
+}
+.dashboard{
+    display: flex;
+    flex: 2;
+    background-color: rgb(218, 212, 212);
+}
+.between{
+    display: flex;
+    flex: 8;
+    padding-top: 100px;
+    
+}
+.AccountDetail{
+
+    flex: 10;
+    padding: 10px;
+}
+.ProfileDetail{
+
+    flex: 0;
+}
+.text{
+    font-style: italic;
+    color: rgb(177, 177, 165);
+    flex: 4;
+}
+.textinput{
+    width: 100%;
+    margin: 3px;
+}
+.alert{
+    color: red;
+    font-weight: 100;
+    font-size: 10px;
+    font-weight: initial;
+}
+.update{
+    flex: 1;
+    color: red;
+    font-style: italic;
+    border: none;
+}
+.inputchange{
+    flex: 3;
+    border: none;
+    border-bottom: solid 1px;
+}

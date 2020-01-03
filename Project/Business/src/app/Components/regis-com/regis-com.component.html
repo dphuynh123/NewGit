@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="dashboard"></div>
+    <div class="between">
+        <div class="AccountDetail">
+            <h1>Account Register</h1>
+            <div class="text">UserName(required)</div>
+            <input type="text" class="textinput" (keyup)="getValueUserName($event)">
+            <div class="alert" [hidden]="usernamehidden">User name not empty</div>
+            <div class="text">Email Address(required)</div>
+            <input type="text" class="textinput" (keyup)="getValueEmail($event)">
+            <div class="alert" [hidden]="emailhidden">User name not empty</div>
+            <div class="text">Password(required)</div>
+            <input type="password" class="textinput" (keyup)="getValuePassWord($event)">
+            <div class="text">Comfirm Password(required)</div>
+            <input type="password" class="textinput" (keyup)="getValueConfirmPassWord($event)">
+            <div class="alert" [hidden]="confirmpasswordhidden">Password incorrect</div>
+            <div style="display: flex;">
+                <div>
+                    Role
+                </div>
+                <select style="margin-left: 2px;" (change)="selectOption($event.target.value)">
+                    <option value="none">(none)</option>
+                    <option value="Admin">Admin</option>
+                    <option value="User">User</option>
+                </select>
+            </div>
+            <button (click)="regis()">Regis</button>
+        </div>
+        <div class="ProfileDetail"></div>
+    </div>
+    <div class="dashboard"></div>
+</div>
